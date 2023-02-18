@@ -13,11 +13,12 @@ btn.onclick = function(){
 		var ans = 1023 - parseInt(val) % 1024
 
 		if(ans == 0){
-			rsp.innerHTML = "全對！<br>通往結局："
+			rsp.innerHTML = "全對！<br>通往結局：" + "<a href='https://youtu.be/TLTVOwD43SA'>Go!</a>"
 		} else {
 			let cnt = 0
 			let tmp = 512
 			let stack = []
+			console.log(ans)
 			while(tmp >= 1){
 				if(ans >= tmp){
 					ans -= tmp;
@@ -61,7 +62,6 @@ function isNumeric(str) {
 	if (typeof str != "string") return false
 	return !isNaN(str) && !isNaN(parseFloat(str))
 }
-
 
 
 
