@@ -18,7 +18,6 @@ btn.onclick = function(){
 			let cnt = 0
 			let tmp = 512
 			let stack = []
-			console.log(ans)
 			while(tmp >= 1){
 				if(ans >= tmp){
 					ans -= tmp;
@@ -62,6 +61,7 @@ function isNumeric(str) {
 	if (typeof str != "string") return false
 	return !isNaN(str) && !isNaN(parseFloat(str))
 }
+
 
 
 
