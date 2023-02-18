@@ -33,7 +33,7 @@ btn.onclick = function(){
 			})
 
 			rsp.innerHTML = "答錯的題號: " + stack.toString() + "<br>";
-			rsp.innerHTML += "二周目從這裡開始:"
+			rsp.innerHTML += "二周目從這裡開始:" + "<a href='https://youtu.be/gSSz1bHBaZg'>Go!</a>"
 		}
 
 	} else {
