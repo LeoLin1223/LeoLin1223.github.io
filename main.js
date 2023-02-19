@@ -298,4 +298,4 @@ function isNumeric(str) {
 
 
 
-console.log("聖誕卡片上的字母+YT提示帳號的頭貼=代碼")
+console.log("聖誕卡片上的字母+YT提示帳號的頭貼(按照對應直播的時間先後排列)=代碼")
