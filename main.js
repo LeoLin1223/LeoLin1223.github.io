@@ -13,7 +13,7 @@ btn.onclick = function(){
 		var ans = 1023 - parseInt(val) % 1024
 
 		if(ans == 0){
-			rsp.innerHTML = "全對！<br>通往結局：" + "<a href='https://youtu.be/6X0m3ddXn9A'>Go!</a>"
+			rsp.innerHTML = "全對！<br>通往結局：" + "<a href='https://youtu.be/OrBFbZbYBbQ'>Go!</a>"
 		} else {
 			let cnt = 0
 			let tmp = 512
