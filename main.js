@@ -3,7 +3,8 @@ var rsp = document.getElementById("response")
 
 var qset = [5,6,9,10,7,1,8,3,2,4]
 var guess_num = 0
-var guess_not_num = 0;
+var guess_not_num = 0
+var junn = 0
 
 btn.onclick = function(){
 	var val = document.getElementById("answer").value
@@ -12,8 +13,11 @@ btn.onclick = function(){
 	if(isNumeric(val)){
 		var ans = 1023 - parseInt(val) % 1024
 
-		if(ans == 0){
-			rsp.innerHTML = "全對！<br>通往結局：" + "<a href='https://youtu.be/J7qxKHLuFK4'>Go!</a>"
+		if(val == Number('0x1FA9')){
+			callout()
+			rsp.innerHTML = "已確認是パドコ！請使用AES及8105密碼解密<br>解密網址：" + "<a href='https://www.ifreesite.com/textencrypt/' target='_blank'>Go!</a>"
+		} else if(ans == 0){
+			rsp.innerHTML = "全對！<br>通往結局：" + "<a href='https://youtu.be/J7qxKHLuFK4' target='_blank'>Go!</a>"
 		} else {
 			let cnt = 0
 			let tmp = 512
@@ -33,7 +37,7 @@ btn.onclick = function(){
 			})
 
 			rsp.innerHTML = "答錯的題號: " + stack.toString() + "<br>";
-			rsp.innerHTML += "二周目從這裡開始:" + "<a href='https://youtu.be/gSSz1bHBaZg'>Go!</a>"
+			rsp.innerHTML += "二周目從這裡開始:" + "<a href='https://youtu.be/gSSz1bHBaZg' target='_blank'>Go!</a>"
 		}
 
 	} else {
@@ -292,10 +296,6 @@ function isNumeric(str) {
 
 
 
-
-
-
-
-
-
-console.log("聖誕卡片上的字母+YT提示帳號的頭貼英文(按照正確順序排列後)=代碼")
+function callout(){
+	console.log("聖誕卡片上的字母+YT提示帳號的頭貼英文(按照正確順序排列後)=代碼")
+} 
